@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Merienda One', Helvitica, sans-serif;
+  font-weight: 500;
+}
+
+/* Style rules for logos and nav links */
+#logo {
+  width: 300px; 
+  height: 161px;
+  margin: 40px;
+}
+
+#logo2 {
+  width: 140px; 
+  height: 94px;
+}
+
+.logo h2 {
+  padding: 15px;
+  font-family: 'Freestyle Script', sans serif;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
+.link ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.link ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.link ul li a {
+  text-decoration: none;
+  font-family: 'Freestyle Script', sans serif;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
+.nav-container {
+  background: linear-gradient(to right, blue, white, red);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style rules for hero image and header */
+.hero {
+  background: url(images/hero-art.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-family: 'Freestyle Script', sans-serif;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+/* Style rules for menu page */
+.menu {
+  background-color: lavender;
+  border-radius: 50%; 
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Freestyle Script', sans-serif;
+  font-size: 75px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+	align-items: center;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Freestyle Script', sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Style rules for contact page */
+.contact{
+  background: url(images/ban3.jpg);
+  width: 100fr;
+  height: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Freestyle Script', sans-serif;
+  font-size: 50px;
+}
+
+.form-container {
+  width: 100%;
+  text-align: left;
+  background-color: lavender;
+  margin-top: 150px;
+  padding: 30px 30px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+  color: white;
+}
+
+/*Style rules for buttons */
+.btn {
+  background-color: white;
+  border-radius: 12px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Style rules for footer */
+.footer{
+  text-align: center;
+  padding: 3px;
+  background: linear-gradient(to right, blue, white, red);
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0px;
+  border-radius: 50%;
+}
