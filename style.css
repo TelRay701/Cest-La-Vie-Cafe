@@ -1,4 +1,5 @@
-* {
+/* CSS Style Reset */
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,25 +7,25 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Merienda One', Helvitica, sans-serif;
+  font-family: "Merienda One", Helvitica, sans-serif;
   font-weight: 500;
 }
 
 /* Style rules for logos and nav links */
 #logo {
-  width: 300px; 
+  width: 300px;
   height: 161px;
   margin: 40px;
 }
 
 #logo2 {
-  width: 140px; 
+  width: 140px;
   height: 94px;
 }
 
-.logo h2 {
+h2 {
   padding: 15px;
-  font-family: 'Freestyle Script', sans serif;
+  font-family: "Freestyle Script", sans serif;
   font-size: 35px;
   color: whitesmoke;
 }
@@ -42,7 +43,7 @@ body {
 
 .link ul li a {
   text-decoration: none;
-  font-family: 'Freestyle Script', sans serif;
+  font-family: "Freestyle Script", sans serif;
   font-size: 35px;
   color: whitesmoke;
 }
@@ -73,8 +74,8 @@ body {
   flex-direction: column;
 }
 
-.hero-text h1 {
-  font-family: 'Freestyle Script', sans-serif;
+.h1 {
+  font-family: "Freestyle Script", sans-serif;
   font-size: 50px;
   margin-top: 10px;
 }
@@ -82,32 +83,31 @@ body {
 /* Style rules for menu page */
 .menu {
   background-color: lavender;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 h1 {
   text-align: center;
-  font-family: 'Freestyle Script', sans-serif;
+  font-family: "Freestyle Script", sans-serif;
   font-size: 75px;
 }
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-	align-items: center;
+  grid-template-columns: repeat(3, 1 fr);
+  align-items: center;
   text-align: center;
 }
 
 .text {
-  font-family: 'Freestyle Script', sans-serif;
+  font-family: "Freestyle Script", sans-serif;
   font-size: 40px;
   margin-top: 10px;
 }
 
 /* Style rules for contact page */
-.contact{
+.contact {
   background: url(images/ban3.jpg);
-  width: 100fr;
   height: 260px;
   background-position: center;
   background-repeat: no-repeat;
@@ -117,12 +117,11 @@ h1 {
 
 h3 {
   text-align: center;
-  font-family: 'Freestyle Script', sans-serif;
+  font-family: "Freestyle Script", sans-serif;
   font-size: 50px;
 }
 
 .form-container {
-  width: 100%;
   text-align: left;
   background-color: lavender;
   margin-top: 150px;
@@ -130,7 +129,9 @@ h3 {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -142,7 +143,7 @@ input[type=text], select, textarea {
   outline: none;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: white;
   color: black;
   padding: 12px 20px;
@@ -151,7 +152,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: red;
   color: white;
 }
@@ -176,7 +177,7 @@ input[type=submit]:hover {
 }
 
 /* Style rules for footer */
-.footer{
+.footer {
   text-align: center;
   padding: 3px;
   background: linear-gradient(to right, blue, white, red);
@@ -186,6 +187,5 @@ input[type=submit]:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 0px;
   border-radius: 50%;
 }

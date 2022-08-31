@@ -1,83 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Work-Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/freestyle-script"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C'est La Vie Café</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-  <link href="http://fonts.cdnfonts.com/css/freestyle-script" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C'est La Vie Café</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body class="contact">
+    <!-- Navbar Links -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="logo" id="logo2"
+          /></a>
+        </div>
 
-<body class="contact">
-  <!-- Navbar Links -->
-  <nav>
-    <div class="nav-container">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo" id="logo2" /></a>
+        <div class="link">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div class="link">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Start Form -->
+    <div class="form-container">
+      <form action="/action_page.php">
+        <h3>Book a reservation today!</h3>
+
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your first name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Your last name.."
+        />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email here.." />
+
+        <label for="number">Phone Number</label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          placeholder="(###) ###-####"
+        />
+
+        <label for="reference">Referral Source</label> <br />
+        <label for="reference">How did you find out about us?</label>
+        <select name="reference" id="reference" class="form-control">
+          <option value="ad">Advertisement</option>
+          <option value="friend">Friend</option>
+          <option value="google">Google</option>
+          <option value="social">Social Media</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+      <p>
+        <a href="mailto:connect@laviecafe.net" class="text-white"
+          >connect@laviecafe.net</a
+        >
+      </p>
+      <div id="footer">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            src="images/logo-facebook.png"
+            alt="black and white Facebook logo"
+            class="pr-4"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img
+            src="images/logo-twitter.png"
+            alt="black and white Twitter logo"
+            class="pr-4"
+        /></a>
+        <a href="https://www.snapchat.com/" target="_blank"
+          ><img
+            src="images/logo-snapchat.png"
+            alt="black and white Snapchat logo"
+            class="pr-4"
+        /></a>
+        <a href="https://www.tiktok.com/login" target="_blank"
+          ><img
+            src="images/logo-tiktok.png"
+            alt="black and white TikTok logo"
+            class="pr-4"
+        /></a>
       </div>
-    </div>
-  </nav>
-
-  <!-- Start Form -->
-  <div class="form-container">
-    <form action="/action_page.php">
-
-      <h3>Book a reservation today!</h3>
-
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="fname" placeholder="Your first name..">
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lname" placeholder="Your last name..">
-
-      <label for="Email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Email here..">
-
-      <label for="Number">Phone Number</label>
-      <input type="text" id="number" name="number" placeholder="(###) ###-####">
-
-      <label for="source">Referral Source</label> <br>
-      <label for="reference">How did you find out about us?</label>
-      <select name="reference" id="reference" class="form-control">
-        <option value="ad">Advertisement</option>
-        <option value="friend">Friend</option>
-        <option value="google">Google</option>
-        <option value="social">Social Media</option>
-        <option value="other">Other</option>
-      </select>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write something.." style="height: 200px;"></textarea>
-
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; Copyright 2022. All Rights Reserved.</p>
-    <p><a href="mailto:connect@laviecafe.net" class="text-white">connect@laviecafe.net</a></p>
-    <div id="footer">
-      <a href="https://www.facebook.com/" target="_blank"><img src="images/logo-facebook.png"
-          alt="black and white Facebook logo" class="pr-4" /></a>
-      <a href="https://twitter.com/" target="_blank"><img src="images/logo-twitter.png"
-          alt="black and white Twitter logo" class="pr-4" /></a>
-      <a href="https://www.snapchat.com/" target="_blank"><img src="images/logo-snapchat.png"
-          alt="black and white Snapchat logo" class="pr-4" /></a>
-      <a href="https://www.tiktok.com/login" target="_blank"><img src="images/logo-tiktok.png"
-          alt="black and white TikTok logo" class="pr-4" /></a>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
