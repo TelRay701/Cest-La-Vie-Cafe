@@ -13,14 +13,14 @@ body {
 
 /* Style rules for logos and nav links */
 #logo {
-  width: 300px;
-  height: 161px;
+  width: 180px;
+  height: auto;
   margin: 40px;
 }
 
 #logo2 {
-  width: 140px;
-  height: 94px;
+  width: 124.276596px;
+  height: 107.329787px;
 }
 
 h2 {
@@ -59,7 +59,7 @@ h2 {
 
 /* Style rules for hero image and header */
 .hero {
-  background: url(images/hero-art.png);
+  background: url(images/hero-art.webp);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ h1 {
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(3, 1 fr);
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
 }
@@ -115,7 +115,8 @@ h1 {
   position: relative;
 }
 
-h3 {
+h2 {
+  color: black;
   text-align: center;
   font-family: "Freestyle Script", sans-serif;
   font-size: 50px;
